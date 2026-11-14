@@ -11,21 +11,25 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:unit": "vitest run tests/soma.test.ts",
-    "test:integration": "vitest run tests/app.integration.test.ts"
+    "test:integration": "vitest run tests/app.integration.test.ts",
+    "security": "eslint src tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "better-sqlite3": "^13.1.1",
     "express": "^5.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/better-sqlite3": "^9.6.0",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
     "@types/supertest": "^7.2.1",
     "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-security": "^4.2.1",
     "prettier": "^3.10.1",
     "supertest": "^7.3.2",
     "tsx": "^4.23.15",
